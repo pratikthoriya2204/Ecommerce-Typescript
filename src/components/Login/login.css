@@ -1,0 +1,170 @@
+.login {
+    width: 100%;
+    height: 740px;
+    display: flex;
+
+    align-items: center;
+}
+
+.signup-img {
+    width: 60%;
+    height: 600px;
+}
+
+.signup-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.form {
+    width: 40%;
+}
+
+.form-heading {
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+
+.form-heading h3 {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.form-heading p {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(58, 57, 57);
+}
+
+.form-control,
+.form-select {
+    border: none;
+    border-bottom: 1px solid #FF8A65;
+    border-radius: 0;
+    border-color: #FF8A65;
+    font-size: 14px;
+    width: 50%;
+}
+
+.form-control::placeholder {
+    font-size: 12px;
+}
+
+.login-btn {
+    width: 50%;
+    border-radius: 0;
+    background-color: #FF8A65;
+    border: none;
+}
+
+.err-msg {
+    color: red;
+}
+
+.message {
+    padding-top: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.message p a {
+    text-decoration: none;
+    color: #FF8A65;
+}
+.form-heading-img{
+    display: none;
+}
+
+@media (max-device-width:1199px) {
+    .signup-img {
+        width: 60%;
+        height: 500px;
+    }
+
+    .form-control,
+    .form-select {
+        font-size: 14px;
+        width: 70%;
+    }
+
+    .login-btn {
+        width: 70%;
+        border-radius: 0;
+    }
+
+    .message {
+        padding-top: 10px;
+        width: 70%;
+    }
+}
+
+@media (max-device-width:1024px) {
+    .signup-img {
+        display: none;
+    }
+
+    .form {
+        width: 50%;
+        padding: 50px 0px;
+    }
+
+    .form-control,
+    .form-select {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .login-btn {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .message {
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .login {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-heading {
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .form-heading-img{
+        display: block;
+        width: 120px;
+        height: 100px;
+    }
+    .form-heading h3 {
+        font-size: 27px;
+    }
+
+    .form-heading p {
+        font-size: 15px;
+    }
+
+}
+@media (max-device-width:525px) {
+    .form {
+        width: 80%;
+        padding: 50px 0px;
+    }
+}

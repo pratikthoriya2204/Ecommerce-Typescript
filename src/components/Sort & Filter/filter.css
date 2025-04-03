@@ -1,0 +1,51 @@
+.filter {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.sortby {
+    width: 150px;
+}
+
+.form-select {
+    background-color: transparent;
+    border: none;
+    background-position: right 0.95rem center;
+    font-size: 19px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #f40e1d;
+    background-color: #ffd6c9;
+}
+
+.filter-item button {
+    background-color: #FF8A65;
+    border: none;
+}
+
+.offcan-head {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn {
+    background-color: #ca5835;
+    border: none;
+}
+
+.clear-btn {
+    background-color: #f5a288;
+    border: none;
+}
+
+@media(max-device-width:767px) {
+    .filter {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
