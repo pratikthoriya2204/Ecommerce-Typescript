@@ -36,9 +36,8 @@ const Signup = () => {
     });
     const [error, setError] = useState<Errors>({});
 
-    const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
-        const name = e.target.name;
-        const value = e.target.value;
+    const handleChange = (e: ChangeEvent<HTMLElement>): void => {
+        const { name, value } = e.target as HTMLInputElement | HTMLSelectElement;
         setData(prev => ({ ...prev, [name]: value }));
     }
 
@@ -194,7 +193,7 @@ const Signup = () => {
                         </Form.Group>
                         <Form.Group className="mb-3">
                             <Form.Select aria-label="Default select example" name='city' value={data.city} onChange={handleChange} >
-                                <option>Select City</option>
+                                <option value="">Select City</option>
                                 <option value="Rajkot">Rajkot</option>
                                 <option value="Ahmedabad">Ahmedabad</option>
                                 <option value="Surat">Surat</option>
